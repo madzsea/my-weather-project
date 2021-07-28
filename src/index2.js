@@ -28,6 +28,9 @@ function showTemperature(response) {
   let cityWeather = response.data.weather[0].description;
   let cityDescription = document.querySelector("#description");
   cityDescription.innerHTML = cityWeather;
+  let currentLocation = response.data.name;
+  let citySearch = document.querySelector("#city");
+  citySearch.innerHTML = `${currentLocation}`;
 }
 
 function search(event) {
@@ -75,10 +78,6 @@ function searchLocation(position) {
   let long = position.coords.longitude;
   let apiKey = "e70f39679296042a105ae9d2c915332b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
-  let currentLocation = `Your current Location`;
-  let citySearch = document.querySelector("#city");
-  citySearch.innerHTML = `Your current location`;
-  console.log(currentLocation);
   axios.get(apiUrl).then(showTemperature);
 }
 
