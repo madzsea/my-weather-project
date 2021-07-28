@@ -20,6 +20,7 @@
 <body>
     <div class="container">
         <h1>Weather</h1>
+        <h4 id="current-time">Thursday 22nd of July</h4>
         <form id="city-search">
             <input type="text" placeholder="Enter a city" id="city-info" />
             <button type="submit" class="btn btn-primary search" id="city-submit">Submit</button>
@@ -27,18 +28,19 @@
         <button id="current-location">Current location</button>
         <div class="row">
             <div class="col-6 now">
-                <h4 id="current-time">Thursday 22nd of July</h4>
-                <h2 id="city">
-                    Sydney </h2>
-                <h2>
-                    <i class="fas fa-cloud-sun-rain weather"></i>
+
+                <h2> <span id="city">
+                        Sydney
+                        <div>
+                            <i class="fas fa-cloud-sun-rain weather"></i>
+                        </div>
                 </h2>
             </div>
             <div class="col-6 now">
                 <h3> <span id="temperature">16 </span><span class="units"> <a href="#" id="celsius"> °C </a> | <a
-                            href="#" id="fahrenheit"> °F </a> </span></h3>
+                            href="#" id="fahrenheit"> °F </a> </span>
+                    <div id="description">Sunny</div>
                 </h3>
-                <h3 id="description">Sunny</h3>
             </div>
         </div>
 
