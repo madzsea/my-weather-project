@@ -42,7 +42,7 @@ h3 {
   border-radius: 20px;
   padding: 20px 20px;
   margin: 10px 10px;
-  height: 170px;
+  height: 250px;
   text-align: center;
 }
 
@@ -83,6 +83,7 @@ img {
   text-align: center;
   padding-bottom: 40px;
 }
+
 .open-source {
   font-family: "Oxygen", sans-serif;
   color: #e78678;
@@ -113,6 +114,10 @@ img {
 }
 
 .temperature-description {
+  line-height: 1.8;
+}
+
+.today-forecast {
   line-height: 1.8;
 }
 

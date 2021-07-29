@@ -110,5 +110,10 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+navigator.geolocation.getCurrentPosition(searchLocation);
+
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", currentNavigator);
+
+let city = document.querySelector("#city");
+city.innerHTML = `Sydney`;
