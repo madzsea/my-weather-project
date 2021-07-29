@@ -64,6 +64,7 @@ img {
 }
 .active:hover {
   text-decoration: none;
+  color: black;
 }
 
 .card {
@@ -81,6 +82,13 @@ img {
 .citySearch {
   text-align: center;
   padding-bottom: 40px;
+}
+.open-source {
+  font-family: "Oxygen", sans-serif;
+  color: #e78678;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .search {
