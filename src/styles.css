@@ -121,6 +121,11 @@ img {
   line-height: 1.8;
 }
 
+.today-weather {
+  font-size: 18px;
+  color: rgb(141, 134, 134);
+}
+
 .units {
   font-size: 18px;
 }
