@@ -16,6 +16,10 @@ button {
   border: 1px solid #fed28f;
 }
 
+div {
+  text-transform: capitalize;
+}
+
 form {
   text-align: center;
 }
@@ -30,7 +34,7 @@ h1 {
 
 h2 {
   font-family: "Oxygen", sans-serif;
-  background: #706a8a;
+  background: white;
   border-style: solid;
   border-color: #fed28f;
   font-size: 40px;
@@ -41,8 +45,7 @@ h2 {
 
 h3 {
   font-family: "Oxygen", sans-serif;
-  background: white;
-  background-color: #e78678;
+  background-color: white;
   border-style: solid;
   border-color: #fed28f;
   border-radius: 20px;
@@ -62,11 +65,13 @@ h4 {
   text-align: center;
   margin-top: 30px;
   padding: 30px;
+  background-color: #fed28f;
+  border-color: #706a8a;
 }
 
 .card-title {
   font-size: 30px;
-  color: #fed28f;
+  color: #706a8a;
 }
 .citySearch {
   text-align: center;

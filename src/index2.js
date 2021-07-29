@@ -1,4 +1,5 @@
 let now = new Date();
+console.log(now);
 let days = [
   "Sunday",
   "Monday",
@@ -17,9 +18,25 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
+let date = now.getDate();
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let month = months[now.getMonth()];
 
 let currentTime = document.querySelector("#current-time");
-currentTime.innerHTML = `${day} ${hours}:${minutes}`;
+currentTime.innerHTML = `${day} ${date} ${month}, ${hours}:${minutes} AEST`;
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
@@ -31,6 +48,11 @@ function showTemperature(response) {
   let currentLocation = response.data.name;
   let citySearch = document.querySelector("#city");
   citySearch.innerHTML = `${currentLocation}`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(event) {
