@@ -43,6 +43,7 @@ h3 {
   padding: 20px 20px;
   margin: 10px 10px;
   height: 170px;
+  text-align: center;
 }
 
 h4 {
@@ -92,6 +93,10 @@ img {
 .now {
   text-align: center;
   padding: 20px auto;
+}
+
+.temperature-description {
+  line-height: 1.8;
 }
 
 .units {
