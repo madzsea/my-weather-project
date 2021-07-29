@@ -45,6 +45,13 @@ function showTemperature(response) {
   let cityWeather = response.data.weather[0].description;
   let cityDescription = document.querySelector("#description");
   cityDescription.innerHTML = cityWeather;
+  let cityWind = response.data.wind.speed;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = `${cityWind} km/h`;
+  let cityHumidity = response.data.main.humidity;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${cityHumidity}%`;
+  console.log(response.data);
   let currentLocation = response.data.name;
   let citySearch = document.querySelector("#city");
   citySearch.innerHTML = `${currentLocation}`;
