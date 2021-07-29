@@ -57,6 +57,15 @@ img {
   color: #e78678;
 }
 
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
+
 .card {
   text-align: center;
   margin-top: 30px;
