@@ -32,13 +32,20 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35px;
+  vertical-align: middle;
+}
 h2,
 h3 {
   font-family: "Oxygen", sans-serif;
   background: white;
   border-style: solid;
   border-color: #fed28f;
-  font-size: 40px;
   border-radius: 20px;
   padding: 20px 20px;
   margin: 10px 10px;
@@ -73,6 +80,9 @@ img {
   padding: 30px;
   background-color: white;
   border-color: #706a8a;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1.8px;
 }
 
 .card-title {
