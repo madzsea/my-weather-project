@@ -100,6 +100,7 @@ img {
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .search {
@@ -151,4 +152,13 @@ img {
   padding: 20px;
   border: 10px, solid, #424a55;
   border-radius: 10px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  justify-content: center;
+  position: relative;
 }
