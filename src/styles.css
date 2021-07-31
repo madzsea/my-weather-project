@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 28px;
   vertical-align: middle;
 }
 h2,
@@ -161,4 +161,6 @@ img {
   font-size: 30px;
   justify-content: center;
   position: relative;
+  background-color: white;
+  border-radius: 10px;
 }
