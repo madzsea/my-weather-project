@@ -103,6 +103,11 @@ img {
   padding-top: 10px;
 }
 
+.open-source:hover {
+  color: #706a8a;
+  cursor: pointer;
+}
+
 .search {
   background: #e78678;
   border: #e78678;
@@ -150,7 +155,6 @@ img {
   max-width: 900px;
   margin: 30px auto;
   padding: 20px;
-  border: 10px, solid, #424a55;
   border-radius: 10px;
 }
 
@@ -163,4 +167,16 @@ img {
   position: relative;
   background-color: white;
   border-radius: 10px;
+}
+
+.weather-forecast-max {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #706a8a;
+}
+
+.weather-forecast-min {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #fed28f;
 }

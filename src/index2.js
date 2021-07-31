@@ -78,7 +78,6 @@ function displayForecast(response) {
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
 }
 
 function getForecast(coordinates) {
@@ -100,7 +99,6 @@ function showTemperature(response) {
   let cityHumidity = response.data.main.humidity;
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `${cityHumidity}%`;
-  console.log(response.data);
   let currentLocation = response.data.name;
   let citySearch = document.querySelector("#city");
   citySearch.innerHTML = `${currentLocation}`;
@@ -123,7 +121,6 @@ function search(event) {
   let apiKey = "e70f39679296042a105ae9d2c915332b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
-  console.log(apiUrl);
 }
 
 let citySubmit = document.querySelector("#city-search");
@@ -171,9 +168,9 @@ function searchLocation(position) {
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", currentNavigator);
 
-function search(city) {
+function defaultSearch(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
-search("Sydney");
+defaultSearch("Sydney");
